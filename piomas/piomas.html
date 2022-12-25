@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>PIOMAS data</title>
 	<meta charset="utf-8">
@@ -6,15 +7,18 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<style>
 		.piomas-map{
-			max-width: 650px;
+			width: 100%;
+		}
+		.piomas-image-container{
+			padding: 0;
 		}
 	</style>
-	<script language="javascript" src="piomas.js" defer>
+	<script src="piomas.js" defer>
 	</script>
 </head>
 <body>
-<div style="padding: 30px; margin-bottom: 40px; min-width: 500px;">
-	<div style="max-width: 600px;">All images and data below are calculated from the PIOMAS gridded sea ice thickness data provided by the <a href="http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/model_grid">Polar Science Center (Zhang et al.)</a>
+<div style="padding: 30px; margin-bottom: 40px; min-width: 350px;">
+	<div>All images and data below are calculated from the PIOMAS gridded sea ice thickness data provided by the <a href="http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/model_grid">Polar Science Center (Zhang et al.)</a>
 	</div>
 	<h2 id="csv">Sea ice volume spreadsheets</h2>
 	<ul>
@@ -36,47 +40,49 @@
 	</ul>
 		
 	<h2 id="maps">Latest sea ice thickness maps</h2>
-	<div class="row" style="margin-left: -70px;">
-		<div class="col-lg-6">
+	<div class="row" style="margin-left: -50px;">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="thickness-daily" src="piomas-thickness-daily-latest.png" alt="Ice thickness map" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="thickness-anomaly" src="piomas-thickness-anomaly-daily-latest.png" alt="Ice thickness anomaly map" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="thickness-difference" src="piomas-thickness-difference-latest.png" alt="Ice difference change in the last 2 weeks" class="piomas-map">
 		</div>		
 	</div>
 	
 	<h2 id="graphs">Sea ice volume graphs</h2>
-	<div class="row" style="margin-left: -50px;">
-		<div class="col-lg-6">
+	<div class="row" style="margin-left: -40px;">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="volume-graph" src="piomas-volume.png" alt="Volume graph" class="piomas-map">
 		</div>
-		<div class="col-lg-6">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="volume-anomaly" src="piomas-volume-anomaly.png" alt="Volume anomaly graph" class="piomas-map">
 		</div>
 	</div>
 	
 	<h2 id="fram">Fram Strait export</h2>
-	<div style="padding-left: 1em;">		
-		<label style="padding-left: 2em;">Definition of Fram Strait (yellow line) and an extension to Franz Josef Land (red line):</label>
-		<div>
-			<img src="piomas-grid-lines.png" alt="Fram Strait definitions" style="max-width: 540px;">
+	<div class="row" style="margin-left: -10px;">
+		<div class="col-sm-6 col-md-4">	
+			<div>Definition of Fram Strait (yellow line) and extension to Franz Josef Land (red line):</div>
+			<div>
+				<img src="piomas-grid-lines.png" alt="Fram Strait definitions" class="piomas-map">
+			</div>
 		</div>
 	</div>
-	<div class="row" style="margin-left: -55px;">
-		<div class="col-lg-6">
+	<div class="row" style="margin-left: -40px;">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="fram-export" src="piomas-fram-export.png" alt="Sea ice export through Fram Strait" class="piomas-map">
 		</div>
-		<div class="col-lg-6">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="fram-fjl" src="piomas-fram-fjl-export.png" alt="Sea ice export through Fram Strait-FJL" class="piomas-map">
 		</div>
 	</div>
 
 	<h2 id="regional">Regional sea ice volume graphs</h2>
 	<div style="margin: 1em 0;">
-		<a href="./piomas-regional.html">Go to PIOMAS regional graphs page</a>
+		<a href="./piomas-regional.html">Go to regional volume graphs page</a>
 	</div>
 	
 </div>

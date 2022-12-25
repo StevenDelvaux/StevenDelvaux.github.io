@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>PIOMAS data</title>
 	<meta charset="utf-8">
@@ -6,63 +7,68 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<style>
 		.piomas-map{
-			max-width: 650px;
+			width: 100%;
+		}
+		.piomas-image-container{
+			padding: 0;
 		}
 	</style>
-	<script language="javascript" src="piomas-regional.js" defer>
+	<script src="piomas-regional.js" defer>
 	</script>
 </head>
 <body>
-<div style="padding: 30px; min-width: 500px;">	
+<div style="padding: 30px; margin-bottom: 40px; min-width: 350px;">	
 	<div style="margin: 1em 0;">
 		<a href="./piomas.html">Back to main page</a>	
 	</div>
-	<div style="max-width: 300px; max-height: 400px; padding-left: 3em;">
-		<label>Definition of the regions:</label>
-		<img src="https://i.imgur.com/5rKPNwV.png" alt="Region definitions" class="piomas-map">
+	<div class="row">
+		<div class="col-sm-6 col-md-4">
+			<label>Definition of the regions:</label>
+			<img src="https://i.imgur.com/5rKPNwV.png" alt="Region definitions" class="piomas-map">
+		</div>
 	</div>	
-	<div class="row" style="margin-left: -50px;">
-		<div class="col-lg-6 piomas-map">
+	<div class="row" style="margin-left: -45px;">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="cab-volume" src="piomas-cab-volume.png" alt="Central Arctic Basin" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="caa-volume" src="piomas-caa-volume.png" alt="Canadian Arctic Archipelago" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="beaufort-volume" src="piomas-beaufort-volume.png" alt="Beaufort Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="chukchi-volume" src="piomas-chukchi-volume.png" alt="Chukchi Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="bering-volume" src="piomas-bering-volume.png" alt="Bering Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="ess-volume" src="piomas-ess-volume.png" alt="East Siberian Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="laptev-volume" src="piomas-laptev-volume.png" alt="Laptev Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="kara-volume" src="piomas-kara-volume.png" alt="Kara Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="barents-volume" src="piomas-barents-volume.png" alt="Barents Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="greenland-volume" src="piomas-greenland-volume.png" alt="Greenland Sea" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="baffin-volume" src="piomas-baffin-volume.png" alt="Baffin Bay" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="hudson-volume" src="piomas-hudson-volume.png" alt="Hudson Bay" class="piomas-map">
 		</div>
-		<div class="col-lg-6 piomas-map">
+		<div class="col-sm-6 col-md-4 piomas-image-container">
 			<img id="okhotsk-volume" src="piomas-okhotsk-volume.png" alt="Sea of Okhotsk" class="piomas-map">
 		</div>
 	</div>
-		<div style="margin: 1em 0;">
+	<div style="margin: 1em 0;">
 		<a href="./piomas.html">Back to main page</a>	
 	</div>
 </div>
