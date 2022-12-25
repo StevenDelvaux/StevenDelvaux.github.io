@@ -9,9 +9,11 @@
 			max-width: 650px;
 		}
 	</style>
+	<script language="javascript" src="piomas.js" defer>
+	</script>
 </head>
 <body>
-<div style="padding: 20px; width: 1200px;">
+<div style="padding: 30px; margin-bottom: 40px; width: 1200px;">
 	<div style="max-width: 600px;">All images and data below are calculated from the PIOMAS gridded sea ice thickness data provided by the <a href="http://psc.apl.uw.edu/research/projects/arctic-sea-ice-volume-anomaly/data/model_grid">Polar Science Center (Zhang et al.)</a>
 	</div>
 	<h2 id="csv">Sea ice volume spreadsheets</h2>
@@ -36,23 +38,23 @@
 	<h2 id="maps">Latest sea ice thickness maps</h2>
 	<div class="row">
 		<div class="col-lg-6">
-			<img src="piomas-thickness-daily-latest.png" alt="Ice thickness map" class="piomas-map">
+			<img id="thickness-daily" src="piomas-thickness-daily-latest.png" alt="Ice thickness map" class="piomas-map">
 		</div>
 		<div class="col-lg-6 piomas-map">
-			<img src="piomas-thickness-anomaly-daily-latest.png" alt="Ice thickness anomaly map" class="piomas-map">
+			<img id="thickness-anomaly" src="piomas-thickness-anomaly-daily-latest.png" alt="Ice thickness anomaly map" class="piomas-map">
 		</div>
 		<div class="col-lg-6 piomas-map">
-			<img src="piomas-thickness-difference-latest.png" alt="Ice difference change in the last 2 weeks" class="piomas-map">
+			<img id="thickness-difference" src="piomas-thickness-difference-latest.png" alt="Ice difference change in the last 2 weeks" class="piomas-map">
 		</div>		
 	</div>
 	
 	<h2 id="graphs">Sea ice volume graphs</h2>
 	<div class="row">
 		<div class="col-lg-6">
-			<img src="piomas-volume.png" alt="Volume graph" class="piomas-map">
+			<img id="volume-graph" src="piomas-volume.png" alt="Volume graph" class="piomas-map">
 		</div>
 		<div class="col-lg-6">
-			<img src="piomas-volume-anomaly.png" alt="Volume anomaly graph" class="piomas-map">
+			<img id="volume-anomaly" src="piomas-volume-anomaly.png" alt="Volume anomaly graph" class="piomas-map">
 		</div>
 	</div>
 	
@@ -65,61 +67,18 @@
 	</div>
 	<div class="row">
 		<div class="col-lg-6">
-			<img src="piomas-fram-export.png" alt="Sea ice export through Fram Strait" class="piomas-map">
+			<img id="fram-export" src="piomas-fram-export.png" alt="Sea ice export through Fram Strait" class="piomas-map">
 		</div>
 		<div class="col-lg-6">
-			<img src="piomas-fram-fjl-export.png" alt="Sea ice export through Fram Strait-FJL" class="piomas-map">
+			<img id="fram-fjl" src="piomas-fram-fjl-export.png" alt="Sea ice export through Fram Strait-FJL" class="piomas-map">
 		</div>
 	</div>
 
 	<h2 id="regional">Regional sea ice volume graphs</h2>
-	<div style="max-width: 300px; max-height: 400px; padding-left: 6em;">
-		<label>Definition of the regions:</label>
-		<img src="https://i.imgur.com/5rKPNwV.png" alt="Region definitions" class="piomas-map">
-	</div>	
-	
-	<div class="row">
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-cab-volume.png" alt="Central Arctic Basin" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-caa-volume.png" alt="Canadian Arctic Archipelago" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-beaufort-volume.png" alt="Beaufort Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-chukchi-volume.png" alt="Chukchi Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-bering-volume.png" alt="Bering Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-ess-volume.png" alt="East Siberian Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-laptev-volume.png" alt="Laptev Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-kara-volume.png" alt="Kara Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-barents-volume.png" alt="Barents Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-greenland-volume.png" alt="Greenland Sea" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-baffin-volume.png" alt="Baffin Bay" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-hudson-volume.png" alt="Hudson Bay" class="piomas-map">
-		</div>
-		<div class="col-lg-6 piomas-map">
-			<img src="piomas-okhotsk-volume.png" alt="Sea of Okhotsk" class="piomas-map">
-		</div>
+	<div style="margin: 1em 0;">
+		<a href="./piomas-regional.html">Go to PIOMAS regional graphs page</a>
 	</div>
-	<!-- <img src="piomas-regional-volume.png" alt="Volume graphs"> -->
+	
 </div>
 </body>
 </html>
